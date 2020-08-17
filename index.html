@@ -79,15 +79,13 @@
                 </div>
             </div>
 
-          
             <div id="parrent-row" class="search-result col-md-8 mx-auto py-4">
                 
             </div>
 
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" role="dialog">
-                    <div class="modal-dialog">                    
-                      <!-- Modal content-->
+                    <div class="modal-dialog">   
                       <div class="modal-content">
                         <div class="modal-header">
                           <h4 id="Title"></h4>
@@ -132,7 +130,6 @@ document.getElementById("search-btn").addEventListener('click',function(){
 
 
  function displaySong(title){
-     //console.log(songs.data);
       const songs = title.data.map(title => title);
    
       const  parrentDiv = document.getElementById("parrent-row");
@@ -151,10 +148,9 @@ document.getElementById("search-btn").addEventListener('click',function(){
                                 <button class="btn btn-success" onclick="getLyrics(\'${artist.name}'\,\'${title}'\)">Get Lyrics</button>
                             </div>`;
 
-        parrentDiv.appendChild(childDiv);                     
+        parrentDiv.appendChild(childDiv);                    
          
       }
-
  }
  
  function getLyrics(artist,title) {
